@@ -1,0 +1,14 @@
+{% load static %}
+
+<!-- Clients-->
+<div class="py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    {% for item in clients %}
+                    <div class="col-md-3 col-sm-6 my-3">
+                        <a href="{{ item.link }}"><img class="img-fluid img-brand d-block mx-auto" src={{ item.logo.url }} alt="{{ item.name }}" aria-label="{{ item.name }}" /></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
